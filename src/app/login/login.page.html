@@ -1,0 +1,34 @@
+<ion-content class="main">
+  <ion-grid>
+    <ion-row>
+      <ion-img src="../assets/static/path-icon-inverse.png" class="image_logo"></ion-img>
+    </ion-row>
+    <ion-row>
+      <ion-text class="text2">Proceed with your</ion-text>
+    </ion-row>
+    <ion-row>
+      <ion-text class="text3">Login</ion-text>
+    </ion-row>
+    <ion-row> 
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="onLogin()"> 
+        <ion-label class="email_lbl">Email</ion-label>
+        <ion-item class="email_box">
+          <ion-input type='email' formControlName="email"></ion-input>
+        </ion-item>
+
+        <ion-label class="pswd_lbl">Password</ion-label>
+        <ion-item class="pswd_box">
+          <ion-input type='password' formControlName="password"></ion-input>
+        </ion-item>
+
+        <ion-button class="loginbtn" type="submit" color="primary" expand="block" [disabled]="!loginForm.valid">
+          Login
+        </ion-button>
+        <ion-label class="registertext">
+           or register <a href="/register" >here</a>
+        </ion-label>
+      </form>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

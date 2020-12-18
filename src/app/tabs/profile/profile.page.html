@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-margin-horizontal" *ngIf="userData">
+    <ion-row class="ion-justify-content-center">
+      <ion-row class="ion-align-items-end ion-justify-content-end">
+        <ion-fab-button color="primary" style="position: absolute; z-index: 1" (click)="presentImageActionSheet()">
+          <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+        <input type="file" *ngIf="isDesktop" #filePicker (change)="onFileChoose($event)"/>
+        <ion-img src="assets/static/profile_picture.png" style="object-fit: contain; width: 100%;" *ngIf="!imageUrl"></ion-img>
+        <img id="profilePicture" src="{{imageUrl}}" class="circle-image" *ngIf="imageUrl" (load)="imageLoaded()">
+      </ion-row>
+    </ion-row>
+
+    <ion-row>
+      <ion-text class="ion-text-center">
+        <h2 class="text-bold ion-no-margin ion-margin-top">
+          <b>{{ userData.fullName }}</b>
+        </h2>
+        <h4 class="ion-no-margin ion-padding-bottom">
+          <b>00000021863</b>
+        </h4>
+      </ion-text>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="8">
+          <ion-button class="" color="danger" expand="block" (click)="onLogout()">
+            Logout
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <div class="ion-margin-top">
+        <ion-text>
+          <span class="text-bold"><b>Kesan</b></span>
+          <div class="ion-padding">
+            Susah, saya bingung jujur. Tapi karena saya emang kurang pinter aja hehe.
+          </div>
+        </ion-text>
+      </div>
+
+      <div class="ion-padding ion-margin-top bordered">
+        <ion-card-title class="ion-margin-bottom text-bold" style="font-size: 1em">
+          <b>My Feeds</b>
+        </ion-card-title>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>

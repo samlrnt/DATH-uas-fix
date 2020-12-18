@@ -1,0 +1,107 @@
+.main {
+    width: 375px;
+    height: 812px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.image_logo {
+    width: 180px;
+    position: relative;
+    top: 88px;
+    left: 20px;
+}
+
+.text2 {
+	width: 255px;
+	color: rgba(255,65,77,1);
+	position: fixed;
+	top: 261px;
+	left: 25px;
+	font-family: Open Sans;
+	font-weight: Regular;
+	font-size: 30px;
+	opacity: 1;
+	text-align: center;
+}
+.text3 {
+	width: 131px;
+	color: rgba(255,65,77,1);
+	position: fixed;
+	top: 302px;
+	left: 34px;
+	font-family: Open Sans;
+	font-weight: Bold;
+	font-size: 48px;
+	opacity: 1;
+	text-align: center;
+}
+.email_box {
+	width: 306px;
+	opacity: 1;
+	position: fixed;
+	top: 411px;
+	left: 20px;
+	font-family: Open Sans;
+	font-weight: Regular;
+	font-size: 18px;
+}
+.email_lbl {
+	width: 46px;
+	color: rgba(0,0,0,1);
+	position: fixed;
+	top: 391px;
+	left: 40px;
+	font-family: Open Sans;
+	font-weight: Regular;
+	font-size: 18px;
+	opacity: 1;
+	text-align: center;
+}
+.pswd_box {
+	width: 306px;
+	opacity: 1;
+	position: fixed;
+	top: 521px;
+	left: 20px;
+	font-family: Open Sans;
+	font-weight: Regular;
+	font-size: 18px;
+}
+.pswd_lbl {
+	width: 100px;
+	color: rgba(0,0,0,1);
+	position: fixed;
+	top: 491px;
+	left: 25px;
+	font-family: Open Sans;
+	font-weight: Regular;
+	font-size: 18px;
+	opacity: 1;
+	text-align: center;
+}
+.loginbtn {
+	width: 282px;
+	color: rgba(217,236,242,1);
+	position: relative;
+	top: 400px;
+	left: 46px;
+	font-family: Open Sans;
+	font-weight: Regular;
+	font-size: 24px;
+	opacity: 1;
+	text-align: center;
+}
+.registertext {
+	width: 104px;
+	color: rgba(0,0,0,1);
+	position: relative;
+	top: 400px;
+	left: 136px;
+	font-size: 14px;
+	opacity: 1;
+	text-align: center;
+}
